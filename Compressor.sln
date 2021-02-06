@@ -1,10 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compressor.Tool", "Compressor.Tool\Compressor.Tool.csproj", "{B8FF8330-9C4F-4F81-9168-CF58C2D6341B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1CE81B50-9813-4382-963D-21B26574AE0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compressor.Abstractions", "Compressor.Abstractions\Compressor.Abstractions.csproj", "{3E49483B-3FCE-404B-B6BC-5735ABC245E1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E261FACC-F1D0-42A6-82AD-FBB5043535FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compressor.GZip", "Compressor.GZip\Compressor.GZip.csproj", "{98629D60-DFDA-42A5-B3AC-A74D854C3635}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compressor.GZip", "src\Compressor.GZip\Compressor.GZip.csproj", "{6B2234C8-D76D-4B0D-92B2-ACF1C341BEC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compressor.Abstractions", "src\Compressor.Abstractions\Compressor.Abstractions.csproj", "{0A665D6F-0ADA-4631-B0BB-22BED1A46783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compressor.Tool", "src\Compressor.Tool\Compressor.Tool.csproj", "{3CE90D99-8A98-46C8-BB36-16DFE6F3B263}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compressor.GZip.Tests", "tests\Compressor.GZip.Tests\Compressor.GZip.Tests.csproj", "{5B5DE360-E39C-4CDF-AE29-60D51DD2F3EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,17 +18,27 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B8FF8330-9C4F-4F81-9168-CF58C2D6341B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8FF8330-9C4F-4F81-9168-CF58C2D6341B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8FF8330-9C4F-4F81-9168-CF58C2D6341B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8FF8330-9C4F-4F81-9168-CF58C2D6341B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3E49483B-3FCE-404B-B6BC-5735ABC245E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3E49483B-3FCE-404B-B6BC-5735ABC245E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3E49483B-3FCE-404B-B6BC-5735ABC245E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3E49483B-3FCE-404B-B6BC-5735ABC245E1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{98629D60-DFDA-42A5-B3AC-A74D854C3635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{98629D60-DFDA-42A5-B3AC-A74D854C3635}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{98629D60-DFDA-42A5-B3AC-A74D854C3635}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{98629D60-DFDA-42A5-B3AC-A74D854C3635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B2234C8-D76D-4B0D-92B2-ACF1C341BEC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B2234C8-D76D-4B0D-92B2-ACF1C341BEC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B2234C8-D76D-4B0D-92B2-ACF1C341BEC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B2234C8-D76D-4B0D-92B2-ACF1C341BEC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A665D6F-0ADA-4631-B0BB-22BED1A46783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A665D6F-0ADA-4631-B0BB-22BED1A46783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A665D6F-0ADA-4631-B0BB-22BED1A46783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A665D6F-0ADA-4631-B0BB-22BED1A46783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CE90D99-8A98-46C8-BB36-16DFE6F3B263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE90D99-8A98-46C8-BB36-16DFE6F3B263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE90D99-8A98-46C8-BB36-16DFE6F3B263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE90D99-8A98-46C8-BB36-16DFE6F3B263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B5DE360-E39C-4CDF-AE29-60D51DD2F3EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B5DE360-E39C-4CDF-AE29-60D51DD2F3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B5DE360-E39C-4CDF-AE29-60D51DD2F3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B5DE360-E39C-4CDF-AE29-60D51DD2F3EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B2234C8-D76D-4B0D-92B2-ACF1C341BEC4} = {1CE81B50-9813-4382-963D-21B26574AE0E}
+		{0A665D6F-0ADA-4631-B0BB-22BED1A46783} = {1CE81B50-9813-4382-963D-21B26574AE0E}
+		{3CE90D99-8A98-46C8-BB36-16DFE6F3B263} = {1CE81B50-9813-4382-963D-21B26574AE0E}
+		{5B5DE360-E39C-4CDF-AE29-60D51DD2F3EC} = {E261FACC-F1D0-42A6-82AD-FBB5043535FC}
 	EndGlobalSection
 EndGlobal
