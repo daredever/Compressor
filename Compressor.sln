@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compressor.Tool", "Compressor.Tool\Compressor.Tool.csproj", "{B8FF8330-9C4F-4F81-9168-CF58C2D6341B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compressor.Abstractions", "Compressor.Abstractions\Compressor.Abstractions.csproj", "{3E49483B-3FCE-404B-B6BC-5735ABC245E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compressor.GZip", "Compressor.GZip\Compressor.GZip.csproj", "{98629D60-DFDA-42A5-B3AC-A74D854C3635}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8FF8330-9C4F-4F81-9168-CF58C2D6341B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8FF8330-9C4F-4F81-9168-CF58C2D6341B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8FF8330-9C4F-4F81-9168-CF58C2D6341B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8FF8330-9C4F-4F81-9168-CF58C2D6341B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E49483B-3FCE-404B-B6BC-5735ABC245E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E49483B-3FCE-404B-B6BC-5735ABC245E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E49483B-3FCE-404B-B6BC-5735ABC245E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E49483B-3FCE-404B-B6BC-5735ABC245E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98629D60-DFDA-42A5-B3AC-A74D854C3635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98629D60-DFDA-42A5-B3AC-A74D854C3635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98629D60-DFDA-42A5-B3AC-A74D854C3635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98629D60-DFDA-42A5-B3AC-A74D854C3635}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
