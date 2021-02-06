@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "Compressor.Tool": {
+      "commandName": "Project",
+      "commandLineArgs": "compress input.txt output.gz"
+    }
+  }
+}
