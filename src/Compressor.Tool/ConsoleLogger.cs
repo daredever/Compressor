@@ -20,27 +20,7 @@ namespace Compressor.Tool
                 return;
             }
 
-            var current = DateTime.Now;
-            switch (logLevel)
-            {
-                case LogLevel.Trace:
-                    Console.WriteLine(Format, current, nameof(LogLevel.Trace), message);
-                    break;
-                case LogLevel.Debug:
-                    Console.WriteLine(Format, current, nameof(LogLevel.Debug), message);
-                    break;
-                case LogLevel.Info:
-                    Console.WriteLine(Format, current, nameof(LogLevel.Info), message);
-                    break;
-                case LogLevel.Warn:
-                    Console.WriteLine(Format, current, nameof(LogLevel.Warn), message);
-                    break;
-                case LogLevel.Error:
-                    Console.WriteLine(Format, current, nameof(LogLevel.Error), message);
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(logLevel), logLevel, null);
-            }
+            Console.WriteLine(Format, DateTime.Now, logLevel, message);
         }
 
         private bool IsEnabled(LogLevel logLevel) => logLevel >= _minimumLogLevel;
