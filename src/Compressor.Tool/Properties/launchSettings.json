@@ -3,11 +3,11 @@
     "profiles": {
         "Compressor.Tool - compress": {
             "commandName": "Project",
-            "commandLineArgs": "compress /Users/daredever/RiderProjects/Compressor/README.md README.md.gz"
+            "commandLineArgs": "compress ../../../../../tests/data/README.md ../../../../../tests/data/README.md.gz"
         },
         "Compressor.Tool - decompress": {
             "commandName": "Project",
-            "commandLineArgs": "decompress README.md.gz README.md"
+            "commandLineArgs": "decompress ../../../../../tests/data/README.md.gz ../../../../../tests/data/README.md"
         }
     }
 }

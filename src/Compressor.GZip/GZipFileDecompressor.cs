@@ -19,7 +19,7 @@ namespace Compressor.GZip
         public override void Run()
         {
             Decompress();
-            Log.Info($"Decompressed: {InputFile.Name}");
+            Log.Info($"Decompressed {InputFile.Name} from {InputFile.Length} to {OutputFile.Length} bytes.");
         }
 
         private void Decompress()
