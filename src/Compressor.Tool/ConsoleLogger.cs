@@ -6,7 +6,7 @@ namespace Compressor.Tool
     internal sealed class ConsoleLogger : Logger
     {
         private readonly LogLevel _minimumLogLevel;
-        private const string Format = "[{0:dd/MM/yyyy hh:mm:ss.fff} {1}] {2}";
+        private const string Format = "[{0:dd/MM/yyyy hh:mm:ss.fff} {1}] {2}.";
 
         public ConsoleLogger(LogLevel minimumLogLevel = LogLevel.Info)
         {
