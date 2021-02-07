@@ -1,6 +1,6 @@
 using System;
 
-namespace Compressor.Abstractions.Logging
+namespace Compressor.Logging
 {
     public static class Log
     {

@@ -1,4 +1,4 @@
-namespace Compressor.Abstractions.Logging
+namespace Compressor.Logging
 {
     internal sealed class NullLogger : Logger
     {

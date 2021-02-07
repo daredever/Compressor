@@ -2,6 +2,8 @@
 
 GZip CLI Tool.
 
+## Problem
+
 Разработать консольное приложение на C# для поблочного сжатия и распаковки файлов с
 помощью System.IO.Compression.GzipStream.
 
@@ -30,3 +32,12 @@ _GZipTest.exe compress/decompress [имя исходного файла] [имя
 В случае успеха программа должна возвращать 0, при ошибке возвращать 1.
 Примечание: формат архива остаётся на усмотрение автора, и не имеет значения для
 оценки качества тестового, в частности соответствие формату GZIP опционально.
+
+## GZip
+
+- https://en.wikipedia.org/wiki/Gzip
+- https://tools.ietf.org/html/rfc1950
+- https://tools.ietf.org/html/rfc1951
+- https://tools.ietf.org/html/rfc1952
+- https://www.daylight.com/meetings/mug00/Sayle/gzip.html
+

@@ -1,4 +1,4 @@
-namespace Compressor.Abstractions.Logging
+namespace Compressor.Logging
 {
     public abstract class Logger
     {

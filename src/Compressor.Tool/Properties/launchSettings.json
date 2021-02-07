@@ -1,9 +1,13 @@
 {
-  "$schema": "http://json.schemastore.org/launchsettings.json",
-  "profiles": {
-    "Compressor.Tool": {
-      "commandName": "Project",
-      "commandLineArgs": "compress input.txt output.gz"
+    "$schema": "http://json.schemastore.org/launchsettings.json",
+    "profiles": {
+        "Compressor.Tool - compress": {
+            "commandName": "Project",
+            "commandLineArgs": "compress /Users/daredever/RiderProjects/Compressor/README.md README.md.gz"
+        },
+        "Compressor.Tool - decompress": {
+            "commandName": "Project",
+            "commandLineArgs": "decompress README.md.gz README.md"
+        }
     }
-  }
 }

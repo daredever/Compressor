@@ -1,7 +1,8 @@
 ﻿using System;
 using System.IO;
 using CommandLine;
-using Compressor.Abstractions.Logging;
+using Compressor.GZip;
+using Compressor.Logging;
 
 namespace Compressor.Tool
 {
@@ -24,7 +25,7 @@ namespace Compressor.Tool
             {
                 var inputFile = new FileInfo(options.InputFile);
                 var outputFile = new FileInfo(options.OutputFile);
-                var compressor = new FileCompressor(inputFile, outputFile);
+                var compressor = new GZipFileCompressor(inputFile, outputFile);
                 compressor.Run();
                 return 0;
             }
@@ -37,30 +38,19 @@ namespace Compressor.Tool
 
         private static int Decompress(DecompressOptions options)
         {
-            var decompressor = new FileDecompressor();
-            decompressor.Run();
-            return 0;
-        }
-    }
-
-    internal class FileCompressor
-    {
-        public FileCompressor(FileInfo inputFile, FileInfo outputFile)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Run()
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    internal class FileDecompressor
-    {
-        public void Run()
-        {
-            throw new NotImplementedException();
+            try
+            {
+                var inputFile = new FileInfo(options.InputFile);
+                var outputFile = new FileInfo(options.OutputFile);
+                var decompressor = new GZipFileDecompressor(inputFile, outputFile);
+                decompressor.Run();
+                return 0;
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex);
+                return 1;
+            }
         }
     }
 }
