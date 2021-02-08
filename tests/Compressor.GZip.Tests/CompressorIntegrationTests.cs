@@ -18,10 +18,7 @@ namespace Compressor.GZip.Tests
             {
                 // Arrange
                 var expected = Guid.NewGuid().ToString();
-                using (var sw = original.CreateText())
-                {
-                    sw.Write(expected);
-                }
+                File.WriteAllText(original.FullName, expected);
 
                 // Act
                 var compressor = new GZipFileCompressor(original, compressed);
